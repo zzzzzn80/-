@@ -89,7 +89,7 @@ function action(type) {
     let message = "";
 
     if (type === "festival") {
-        money -= 20;
+        money += 20;
         tourist += 50;
         brand += 15;
         happy += 5;
@@ -118,6 +118,7 @@ function action(type) {
         brand += 25;
 
         if (Math.random() < 0.5) {
+            money += 30;
             tourist += 50;
             brand += 20;
             message = "스포츠팀이 우승했습니다!";
